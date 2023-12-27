@@ -1,0 +1,15 @@
+﻿<Window x:Class="VideoLibraryApp.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Справка" Height="450" Width="600">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock FontWeight="Bold" FontSize="16" Text="Правила возврата касеты:"/>
+            <TextBlock Text="1. Срок аренды составляет 7 дней."/>
+            <TextBlock Text="2. При просрочке возврата взимается штраф 25 за каждый день просрочки."/>
+            <TextBlock Text="3. Материал должен быть возвращен в том же состоянии, в котором он был взят на прокат."/>
+            <TextBlock Text="4. За повреждения или утерю материала клиент обязан возместить стоимость."/>
+            <TextBlock Text="5. В случае необходимости продления аренды, обратитесь к администратору."/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,63 @@
+﻿<Window x:Class="VideoLibraryApp.AddMovieDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Movie" Height="500" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <Label Content="Title:" Width="80"/>
+            <TextBox x:Name="TitleTextBox" Margin="5" Width="200" Text="{Binding Movie.Title, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10">
+            <Label Content="Studio:" Width="80"/>
+            <TextBox x:Name="StudioTextBox" Margin="5" Width="200" Text="{Binding Movie.Studio, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="10">
+            <Label Content="Genre:" Width="80"/>
+            <TextBox x:Name="GenreTextBox" Margin="5" Width="200" Text="{Binding Movie.Genre, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="10">
+            <Label Content="Year:" Width="80"/>
+            <TextBox x:Name="YearTextBox" Margin="5" Width="200" Text="{Binding Movie.Year, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="10">
+            <Label Content="Director:" Width="80"/>
+            <TextBox x:Name="DirectorTextBox" Margin="5" Width="200" Text="{Binding Movie.Director, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Orientation="Horizontal" Margin="10">
+            <Label Content="Actors:" Width="80"/>
+            <TextBox x:Name="ActorsTextBox" Margin="5" Width="200" Text="{Binding Movie.Actors, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" Orientation="Horizontal" Margin="10">
+            <Label Content="Rating:" Width="80"/>
+            <TextBox x:Name="RatingTextBox" Margin="5" Width="200" Text="{Binding Movie.Rating, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Orientation="Horizontal" Margin="10">
+            <Label Content="Summary:" Width="80"/>
+            <TextBox x:Name="SummaryTextBox" Margin="5" Width="200" Text="{Binding Movie.Summary, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+
+        <UniformGrid Grid.Row="8" Columns="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
+            <Button Content="OK" IsDefault="True" Click="OKButton_Click"/>
+            <Button Content="Cancel" IsCancel="True" Margin="5"/>
+        </UniformGrid>
+    </Grid>
+</Window>

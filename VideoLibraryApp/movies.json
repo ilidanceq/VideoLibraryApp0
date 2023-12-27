@@ -1,0 +1,33 @@
+[
+    {
+      "Title": "Inception",
+      "Studio": "Warner Bros.",
+      "Genre": "Sci-Fi",
+      "Year": 2010,
+      "Director": "Christopher Nolan",
+      "MainActors": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+      "Rating": 8.8,
+      "InLibrary": true
+    },
+    {
+      "Title": "The Shawshank Redemption",
+      "Studio": "Columbia Pictures",
+      "Genre": "Drama",
+      "Year": 1994,
+      "Director": "Frank Darabont",
+      "MainActors": "Tim Robbins, Morgan Freeman",
+      "Rating": 9.3,
+      "InLibrary": true
+    },
+    {
+      "Title": "The Godfather",
+      "Studio": "Paramount Pictures",
+      "Genre": "Crime",
+      "Year": 1972,
+      "Director": "Francis Ford Coppola",
+      "MainActors": "Marlon Brando, Al Pacino",
+      "Rating": 9.2,
+      "InLibrary": false
+    }
+  ]
+  
